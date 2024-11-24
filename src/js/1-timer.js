@@ -53,18 +53,9 @@ function handleStart() {
       //відмальовуємо вибраний час на сторінці:
       const valueDate = [...values];
       valueDate[0].textContent = String(deltaTimeConvert.days).padStart(2, '0');
-      valueDate[1].textContent = String(deltaTimeConvert.hours).padStart(
-        2,
-        '0'
-      );
-      valueDate[2].textContent = String(deltaTimeConvert.minutes).padStart(
-        2,
-        '0'
-      );
-      valueDate[3].textContent = String(deltaTimeConvert.seconds).padStart(
-        2,
-        '0'
-      );
+      valueDate[1].textContent = String(deltaTimeConvert.hours).padStart(2, '0');
+      valueDate[2].textContent = String(deltaTimeConvert.minutes).padStart(2, '0');
+      valueDate[3].textContent = String(deltaTimeConvert.seconds).padStart(2, '0');
     } else {
       clearInterval(intervarId);
       datetime.disabled = false;
