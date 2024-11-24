@@ -30,24 +30,24 @@ fieldset label {
   flex-direction: row;
   align-items: center;
 }
-input[type='number'] {
+.form input[type='number'] {
   width: 100%;
   border: 1px solid #808080;
   border-radius: 4px;
   height: 40px;
   outline: transparent;
 }
-input[type='number']:hover {
+.form input[type='number']:hover {
   border: 1px solid #000;
 }
 fieldset:hover {
   border: 1px solid #000000;
 }
 
-input[type='number']:focus {
+.form input[type='number']:focus {
   border: 1px solid #4e75ff;
 }
-input[type='radio'] {
+.form input[type='radio'] {
   border: 1px solid #757575;
   border-radius: 14px;
   width: 20px;
@@ -55,11 +55,11 @@ input[type='radio'] {
   transition: border 250ms ease-in-out;
 }
 
-input[type='radio']:hover {
+.form input[type='radio']:hover {
   border: 1px solid #000;
 }
 
-button[type='submit'] {
+.form button[type='submit'] {
   background-color: #4e75ff;
   border-radius: 8px;
   padding: 8px 16px;
