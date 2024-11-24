@@ -45,7 +45,6 @@ flatpickr('#datetime-picker', options);
 let intervarId = null;
 function handleStart() {
   btnStart.disabled = true;
-
   const values = document.querySelectorAll('.value');
   let deltaTime;
   intervarId = setInterval(() => {
