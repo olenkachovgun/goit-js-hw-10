@@ -1,7 +1,5 @@
 import flatpickr from 'flatpickr';
-// Додатковий імпорт стилів
 import 'flatpickr/dist/flatpickr.min.css';
-
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
 import errorImage from '../img/error.svg';
@@ -70,23 +68,9 @@ function handleStart() {
       );
     } else {
       clearInterval(intervarId);
-      btnStart.disabled = false;
       datetime.disabled = false;
     }
   }, 1000);
-
-  //варіан 2 відображення дати в таймері :
-  // valueDate.forEach(element => {
-  //   if (element.hasAttribute('data-days')) {
-  //     element.textContent = deltaTimeConvert.days;
-  //   } else if (element.hasAttribute('data-hours')) {
-  //     element.textContent = deltaTimeConvert.hours;
-  //   } else if (element.hasAttribute('data-minutes')) {
-  //     element.textContent = deltaTimeConvert.minutes;
-  //   } else if (element.hasAttribute('data-seconds')) {
-  //     element.textContent = deltaTimeConvert.seconds;
-  //   }
-  // });
 }
 
 function convertMs(ms) {
