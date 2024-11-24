@@ -40,15 +40,14 @@ const options = {
 };
 flatpickr('#datetime-picker', options);
 
-let intervarId = null;
 function handleStart() {
   btnStart.disabled = true;
   const values = document.querySelectorAll('.value');
-  let deltaTime;
-  intervarId = setInterval(() => {
+  // let deltaTime;
+  const intervarId = setInterval(() => {
     datetime.disabled = true;
     dateCurrently = Date.now();
-    deltaTime = userSelectedDate.getTime() - dateCurrently;
+    const deltaTime = userSelectedDate.getTime() - dateCurrently;
     const deltaTimeConvert = convertMs(deltaTime);
     if (deltaTime > 0) {
       //відмальовуємо вибраний час на сторінці:
